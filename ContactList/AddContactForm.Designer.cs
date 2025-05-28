@@ -6,6 +6,7 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Label labelExtraInfo;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,8 +30,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.labelExtraInfo = new System.Windows.Forms.Label();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            // 
+            // labelExtraInfo
+            // 
+            this.labelExtraInfo.AutoSize = true;
+            this.labelExtraInfo.Location = new System.Drawing.Point(50, 100);
+            this.labelExtraInfo.Name = "labelExtraInfo";
+            this.labelExtraInfo.Size = new System.Drawing.Size(120, 17);
+            this.labelExtraInfo.TabIndex = 2;
+            this.labelExtraInfo.Text = "Thông tin bổ sung";
+            // 
+            // AddContactForm
+            // 
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelExtraInfo);
             this.Text = "Form1";
         }
 
