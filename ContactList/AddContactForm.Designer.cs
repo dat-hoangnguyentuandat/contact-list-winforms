@@ -6,6 +6,8 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.TextBox textBoxEmail;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,9 +31,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(50, 50);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(46, 17);
+            this.labelEmail.TabIndex = 0;
+            this.labelEmail.Text = "Email";
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(120, 47);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(200, 22);
+            this.textBoxEmail.TabIndex = 1;
+            // 
+            // AddContactForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.labelEmail);
+            this.Name = "AddContactForm";
+            this.Text = "Thêm liên hệ";
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
